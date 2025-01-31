@@ -17,6 +17,7 @@ function Header() {
                 <UserButton/>
             </div>:
         <Link to={'/auth/sign-in'}>
+        {/* </Link><Link to={'/dashboard'}> */}
         <Button>Get Started</Button>
         </Link>
         }

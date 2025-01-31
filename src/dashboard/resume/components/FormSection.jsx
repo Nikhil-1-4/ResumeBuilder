@@ -7,6 +7,8 @@ import Experience from './forms/Experience'
 import Education from './forms/Education'
 import Skills from './forms/Skills'
 import Projects from './forms/Projects'
+import Certificates from './forms/Certificates'
+import ExtraAchive from './forms/ExtraAchive'
 import View from '@/my-resume/[resumId]/view'
 import { Navigate, useParams } from 'react-router-dom'
 function FormSection() {
@@ -34,8 +36,12 @@ function FormSection() {
         : activeFormIndex==5?
             <Skills/>  
         : activeFormIndex==6?
-            <Projects/>    
+            <Projects/>   
         : activeFormIndex==7?
+            <Certificates/>  
+        : activeFormIndex==8?
+            <ExtraAchive/>       
+        : activeFormIndex==9?
             <Navigate  to={'/my-resume/'+resumeId+"/view"}/>
           :null}
        {/* Summary */}

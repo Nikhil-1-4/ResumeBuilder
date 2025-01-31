@@ -3,15 +3,20 @@ import React, { useContext, useState } from 'react';
 import Template1 from './preview/Template1';
 import Template2 from './preview/Template2';
 import Template3 from './preview/Template3';
+import Template4 from './preview/Template4';
+import Template5 from './preview/Template5';
+import Template6 from './preview/Template6';
 function ResumePreview() {
   const { resumeInfo } = useContext(ResumeInfoContext);
   const [selectedTemplate, setSelectedTemplate] = useState('Template1');
 
   // Map to store available templates (all set to Template1 for now)
   const templates = {
-    Template1: <Template1 resumeInfo={resumeInfo} />,
-    Template2: <Template2 resumeInfo={resumeInfo} />,
-    Template3: <Template3 resumeInfo={resumeInfo} />,
+    Template1: <Template5 resumeInfo={resumeInfo} />,
+    Template2: <Template5 resumeInfo={resumeInfo} />,
+    Template3: <Template5 resumeInfo={resumeInfo} />,
+    Template6: <Template6 resumeInfo={resumeInfo} />,
+    Template5: <Template5 resumeInfo={resumeInfo} />,
   };
 
   return (
@@ -30,6 +35,8 @@ function ResumePreview() {
           <option value="Template1">Template 1</option>
           <option value="Template2">Template 2</option>
           <option value="Template3">Template 3</option>
+          <option value="Template6">Template6</option>
+          <option value="Template5">Template5</option>
         </select>
       </div>
 

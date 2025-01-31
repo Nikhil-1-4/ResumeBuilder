@@ -5,6 +5,7 @@ import ResumePreview from '@/dashboard/resume/components/ResumePreview';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import dummy from '@/dummy/dummy';
+import dummy2 from '@/dummy/dummy2';
 
 function View() {
     const [resumeInfo, setResumeInfo] = useState();
@@ -16,7 +17,7 @@ function View() {
 
     const GetResumeInfo = () => {
         // Using dummy data directly
-        setResumeInfo(dummy);
+        setResumeInfo(dummy2);
         console.log('Dummy data loaded:', dummy);
     };
 

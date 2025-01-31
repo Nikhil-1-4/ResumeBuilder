@@ -3,6 +3,7 @@ import FormSection from '../../components/FormSection';
 import ResumePreview from '../../components/ResumePreview';
 import { ResumeInfoContext } from '@/context/ResumeInfoContext';
 import dummy from '@/dummy/dummy';
+import dummy2 from '@/dummy/dummy2';
 
 function EditResume() {
   const [resumeInfo, setResumeInfo] = useState();
@@ -10,7 +11,7 @@ function EditResume() {
   const [parsedData, setParsedData] = useState(null);
 
   useEffect(() => {
-    setResumeInfo(dummy); // Initial dummy data
+    setResumeInfo(dummy2); // Initial dummy data
   }, []);
 
   // Handle file upload and parse data
