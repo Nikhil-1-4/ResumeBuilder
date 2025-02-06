@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import dummy from '@/dummy/dummy';
 import dummy2 from '@/dummy/dummy2';
+import Stepper from '@/pages/Stepper';
 
 function View() {
     const [resumeInfo, setResumeInfo] = useState();
@@ -26,9 +27,12 @@ function View() {
     };
 
     return (
+        
         <ResumeInfoContext.Provider value={{ resumeInfo, setResumeInfo }}>
+            
             <div id="no-print">
                 <Header />
+                {/* <div><Stepper/></div> */}
                 <div className="my-10 mx-10 md:mx-20 lg:mx-36">
                     <h2 className="text-center text-2xl font-medium">
                         Woohoo! Your Resume is ready

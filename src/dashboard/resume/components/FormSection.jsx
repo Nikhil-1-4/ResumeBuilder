@@ -11,6 +11,8 @@ import Certificates from './forms/Certificates'
 import ExtraAchive from './forms/ExtraAchive'
 import View from '@/my-resume/[resumId]/view'
 import { Navigate, useParams } from 'react-router-dom'
+import Publications from './forms/Publications'
+import Recommendations from './forms/Recommendations'
 function FormSection() {
     const {resumeId}= useParams()
     const [activeFormIndex, setActiveFormIndex] = useState(1)
@@ -40,8 +42,12 @@ function FormSection() {
         : activeFormIndex==7?
             <Certificates/>  
         : activeFormIndex==8?
-            <ExtraAchive/>       
+            <ExtraAchive/> 
         : activeFormIndex==9?
+            <Publications/>
+        : activeFormIndex==10?
+            <Recommendations/>          
+        : activeFormIndex==11?
             <Navigate  to={'/my-resume/'+resumeId+"/view"}/>
           :null}
        {/* Summary */}

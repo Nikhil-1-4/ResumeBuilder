@@ -5,7 +5,7 @@ export default {
     address: 'Nagpur, Maharashtra',
     phone: '9673409650',
     email: 'bisennikhil9@gmail.com',
-    themeColor: "#FFA500",
+    themeColor: "#1b4ea9",
     summary: 'Passionate Frontend Developer with expertise in building modern and interactive web applications. Adept at developing scalable solutions using React, Redux, and JavaScript frameworks. Strong problem-solving skills and an eye for detail.',
     
     experience: [

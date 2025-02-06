@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#FFA500", // Default button color (e.g., blue-700)
+          DEFAULT: "#1b4ea9", // Default button color (e.g., blue-700)
           hover: "#2563EB",  // Hover state color (e.g., blue-600)
         },
       },
