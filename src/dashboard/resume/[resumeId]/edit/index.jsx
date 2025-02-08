@@ -129,11 +129,15 @@ function EditResume() {
           </Button>
         </div>
 
-        {/* Main Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+        <div className="w-full">
           <FormSection />
+        </div>
+        <div>
           <ResumePreview />
         </div>
+        </div>
+
       </div>
     </ResumeInfoContext.Provider>
   );

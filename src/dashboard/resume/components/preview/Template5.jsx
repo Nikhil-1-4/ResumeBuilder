@@ -128,7 +128,7 @@ function Template5({ resumeInfo }) {
           <hr style={{ borderColor: resumeInfo?.themeColor }} />
           {resumeInfo?.certificates?.map((certificate, index) => (
             <div key={index} className="my-2 text-xs">
-              {certificate.name} - {certificate.provider} ({certificate.date})
+              {certificate.certificateTitle} - {certificate.description}
             </div>
           ))}
         </div>
@@ -146,7 +146,7 @@ function Template5({ resumeInfo }) {
           <hr style={{ borderColor: resumeInfo?.themeColor }} />
           {resumeInfo?.projects?.map((project, index) => (
             <div key={index} className="my-2 text-xs">
-              <strong>{project.name}</strong> - {project.description}
+              <strong>{project.title}  {project.link} </strong> - {project.description}
             </div>
           ))}
         </div>

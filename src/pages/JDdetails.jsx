@@ -101,7 +101,7 @@ function JDdetails() {
             {/* File Upload Input */}
             <div>
               <Label htmlFor="jd-upload" className="text-gray-700 font-medium">
-                Upload JD (PDF, DOC, DOCX, TXT)
+                Upload JD (PDF, DOCX, TXT)
               </Label>
               <div className="flex items-center gap-3 border border-gray-300 rounded-lg overflow-hidden bg-gray-100 px-3 py-2 mt-2">
                 <label className="bg-blue-600 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-blue-900">
@@ -109,7 +109,7 @@ function JDdetails() {
                   <Input
                     id="jd-upload"
                     type="file"
-                    accept=".pdf,.doc,.docx,.txt"
+                    accept=".pdf,.docx,.txt"
                     onChange={handleFileUpload}
                     className="hidden"
                   />

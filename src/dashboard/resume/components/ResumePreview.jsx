@@ -59,19 +59,67 @@
 
 
 
-import { ResumeInfoContext } from '@/context/ResumeInfoContext';
-import React, { useContext, useEffect, useState } from 'react';
-import Template5 from './preview/Template5';
-import Template6 from './preview/Template6';
-import Template7 from './preview/Template7';
+// import { ResumeInfoContext } from '@/context/ResumeInfoContext';
+// import React, { useContext, useEffect, useState } from 'react';
+// import Template5 from './preview/Template5';
+// import Template6 from './preview/Template6';
+// import Template7 from './preview/Template7';
 
+// function ResumePreview() {
+//   const { resumeInfo } = useContext(ResumeInfoContext);
+//   const [selectedTemplate, setSelectedTemplate] = useState('Template5'); // Default template
+
+//   // Fetch selected template from localStorage
+//   useEffect(() => {
+//     const storedTemplate = localStorage.getItem('selectedTemplate');
+//     if (storedTemplate) {
+//       setSelectedTemplate(storedTemplate);
+//     }
+//   }, []);
+
+//   // Map templates
+//   const templates = {
+//     'Template 1': <Template6 resumeInfo={resumeInfo} />,
+//     'Template 2': <Template6 resumeInfo={resumeInfo} />,
+//     'Template 3': <Template7 resumeInfo={resumeInfo} />,
+//   };
+
+//   return (
+//     <div>
+//       {/* Resume Preview */}
+//       <div
+//         className="shadow-lg h-full p-14 border-t-[20px]"
+//         style={{
+//           borderColor: resumeInfo?.themeColor,
+//         }}
+//       >
+//         {/* Render the selected template */}
+//         {templates[selectedTemplate] || <Template5 resumeInfo={resumeInfo} />}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default ResumePreview;
+
+
+import { ResumeInfoContext } from "@/context/ResumeInfoContext";
+import React, { useContext, useEffect, useState } from "react";
+import Template5 from "./preview/Template5";
+import Template6 from "./preview/Template6";
+import Template7 from "./preview/Template7";
+import Athens from "./preview/Athens";
+import ShanghaiATSTemplate from "./preview/ShanghaiATSTemplate";
+import BerlinTemplate from "./preview/BerlinTemplate";
+import PragueATSTemplate from "./preview/PragueATSTemplate";
+import TorontoATSTemplate from "./preview/TorontoATSTemplate";
 function ResumePreview() {
   const { resumeInfo } = useContext(ResumeInfoContext);
-  const [selectedTemplate, setSelectedTemplate] = useState('Template5'); // Default template
+  const [selectedTemplate, setSelectedTemplate] = useState(null);
 
-  // Fetch selected template from localStorage
+  // Fetch selected template from localStorage when component mounts
   useEffect(() => {
-    const storedTemplate = localStorage.getItem('selectedTemplate');
+    const storedTemplate = localStorage.getItem("selectedTemplate");
     if (storedTemplate) {
       setSelectedTemplate(storedTemplate);
     }
@@ -79,26 +127,24 @@ function ResumePreview() {
 
   // Map templates
   const templates = {
-    'Template 1': <Template6 resumeInfo={resumeInfo} />,
-    'Template 2': <Template6 resumeInfo={resumeInfo} />,
-    'Template 3': <Template7 resumeInfo={resumeInfo} />,
+    "Template 1": <TorontoATSTemplate resumeInfo={resumeInfo} />,
+    "Template 2": <Athens resumeInfo={resumeInfo} />,
+    "Template 3": <ShanghaiATSTemplate resumeInfo={resumeInfo} />,
+    "Template 4": <BerlinTemplate resumeInfo={resumeInfo}/>,
+    "Template 5": <PragueATSTemplate resumeInfo={resumeInfo}/>
   };
 
   return (
-    <div>
-      {/* Resume Preview */}
-      <div
-        className="shadow-lg h-full p-14 border-t-[20px]"
-        style={{
-          borderColor: resumeInfo?.themeColor,
-        }}
-      >
-        {/* Render the selected template */}
-        {templates[selectedTemplate] || <Template5 resumeInfo={resumeInfo} />}
-      </div>
+    <div className="shadow-xl border-t-[10px] rounded-lg overflow-hidden bg-white h-full flex justify-center items-center p-6"
+      style={{ borderColor: resumeInfo?.themeColor }}>
+      
+      {/* Render the selected template, default to Template5 */}
+      {templates[selectedTemplate] || <Template5 resumeInfo={resumeInfo} />}
     </div>
   );
 }
 
 export default ResumePreview;
+
+
 

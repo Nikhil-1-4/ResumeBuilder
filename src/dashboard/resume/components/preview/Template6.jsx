@@ -78,7 +78,7 @@ function Template6({ resumeInfo }) {
       {visibleSections.certificates && (
         <Section title="Certificates" color={resumeInfo?.themeColor} toggle={() => toggleSection('certificates')}>
           {resumeInfo?.certificates.map((cert, index) => (
-            <p key={index} className="text-sm">{cert.name} - {cert.provider} ({cert.date})</p>
+            <p key={index} className="text-sm">{cert.certificateTitle} - {cert.description}</p>
           ))}
         </Section>
       )}

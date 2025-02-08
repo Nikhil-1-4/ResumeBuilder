@@ -40,7 +40,7 @@ function Header() {
     <header className="p-4 px-6 flex justify-between items-center bg-white shadow-md border-b-4 border-blue-500  top-0 left-0 w-full z-50">
       {/* Logo */}
       <Link to="/">
-        <img src="/1702966613724.jpeg" alt="Logo" className="w-24 h-auto" />
+        <img src="/1721223456124.jpg" alt="Logo" className="w-24 h-auto" />
       </Link>
 
       {/* Navigation */}

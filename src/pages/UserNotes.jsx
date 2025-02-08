@@ -46,7 +46,7 @@ import Stepper from "./Stepper";
 
 function UserNotes() {
   const [notes, setNotes] = useState("");
-  const [refinement, setRefinement] = useState(0.5); // Default AI refinement level
+  const [refinement, setRefinement] = useState(0); // Default AI refinement level
   const navigate = useNavigate();
   const { resumeId } = useParams(); // Extract resumeId from URL
 
@@ -84,8 +84,8 @@ function UserNotes() {
             className="w-full cursor-pointer"
           />
           <div className="flex justify-between text-sm text-gray-500">
-            <span>Concise (0)</span>
-            <span>Generative (1)</span>
+            <span>Concise </span>
+            <span>Generative </span>
           </div>
 
           {/* Build Resume Button */}

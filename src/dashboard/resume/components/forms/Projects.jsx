@@ -202,18 +202,18 @@ function Projects() {
               <label>Project Title</label>
               <Input
                 name="projectTitle"
-                value={item.projectTitle}
+                value={item.title}
                 onChange={(e) => handleChange(e, index)}
               />
             </div>
-            <div className="col-span-2">
+            {/* <div className="col-span-2">
               <label>Skills Used</label>
               <Input
                 name="skillsUsed"
                 value={item.skillsUsed}
                 onChange={(e) => handleChange(e, index)}
               />
-            </div>
+            </div> */}
             <div className="col-span-2">
               <label>Project Description</label>
               <Textarea

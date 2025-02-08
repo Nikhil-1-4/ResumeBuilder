@@ -7,7 +7,7 @@ export default {
     email: 'bisennikhil9@gmail.com',
     themeColor: "#1b4ea9",
     summary: 'Passionate Frontend Developer with expertise in building modern and interactive web applications. Adept at developing scalable solutions using React, Redux, and JavaScript frameworks. Strong problem-solving skills and an eye for detail.',
-    
+
     experience: [
         {
             id: 1,
@@ -38,7 +38,7 @@ export default {
                 '• Implemented automated testing, increasing code coverage by 25%.'
         }
     ],
-    
+
     education: [
         {
             id: 1,
@@ -52,68 +52,97 @@ export default {
     ],
 
     skills: [
-        {
-            id: 1,
-            name: 'Angular',
-            rating: 80,
-        },
-        {
-            id: 2,
-            name: 'React',
-            rating: 100,
-        },
-        {
-            id: 3,
-            name: 'MySQL',
-            rating: 80,
-        },
-        {
-            id: 4,
-            name: 'React Native',
-            rating: 100,
-        }
+        { id: 1, name: 'Angular', rating: 80 },
+        { id: 2, name: 'React', rating: 100 },
+        { id: 3, name: 'MySQL', rating: 80 },
+        { id: 4, name: 'React Native', rating: 100 }
     ],
 
     certificates: [
         {
             id: 1,
-            name: 'React Developer Certification',
-            provider: 'Udemy',
-            date: 'March 2022'
+            certificateTitle: 'React Developer Certification',
+            description: 'Certification provided by Udemy in March 2022.',
         },
         {
             id: 2,
-            name: 'Full Stack Web Development',
-            provider: 'Coursera',
-            date: 'July 2021'
+            certificateTitle: 'Full Stack Web Development',
+            description: 'Completed on Coursera in July 2021.',
         },
         {
             id: 3,
-            name: 'JavaScript Algorithms & Data Structures',
-            provider: 'freeCodeCamp',
-            date: 'Dec 2020'
+            certificateTitle: 'JavaScript Algorithms & Data Structures',
+            description: 'Earned through freeCodeCamp in Dec 2020.',
         }
     ],
 
     projects: [
         {
             id: 1,
-            name: 'Resume Builder App',
+            title: 'Resume Builder App',
+            link: 'https://your-resume-builder-link.com', 
             description: 'Developed a MERN-stack resume builder application with customizable templates, AI-powered data parsing, and PDF export functionality.',
-            technologies: ['React', 'Node.js', 'MongoDB', 'FastAPI']
         },
         {
             id: 2,
-            name: 'E-commerce Platform',
+            title: 'E-commerce Platform',
+            link: 'https://your-ecommerce-platform.com', 
             description: 'Built a scalable e-commerce platform with secure payment gateways and real-time order tracking.',
-            technologies: ['React', 'Redux', 'Firebase']
         },
         {
             id: 3,
-            name: 'AI-Based Web Scraper',
+            title: 'AI-Based Web Scraper',
+            link: 'https://your-ai-scraper.com', 
             description: 'Created an AI-enhanced web scraper for extracting job postings from company websites.',
-            technologies: ['Selenium', 'Beautiful Soup', 'Python']
         }
+    ],
+
+    publications: [
+        {
+            id: 1,
+            title: 'Optimizing React Performance',
+            publisher: 'Tech Journal',
+            url: 'https://techjournal.com/react-performance'
+        },
+        {
+            id: 2,
+            title: 'AI-Powered Web Scraping Techniques',
+            publisher: 'Data Science Monthly',
+            url: 'https://datasciencemonthly.com/ai-web-scraping'
+        },
+        {
+            id: 3,
+            title: 'Building Scalable Frontend Architectures',
+            publisher: 'WebDev Magazine',
+            url: 'https://webdevmag.com/scalable-frontend'
+        }
+    ],
+
+    recommendations: [
+        {
+            id: 1,
+            name: 'John Doe',
+            relationship: 'Former Manager at Google',
+            recommendation: 'Nikhil is an exceptional frontend developer with a deep understanding of modern JavaScript frameworks. His contributions to our projects significantly improved performance and user engagement.'
+        },
+        {
+            id: 2,
+            name: 'Jane Smith',
+            relationship: 'Senior Engineer at Amazon',
+            recommendation: 'Nikhil consistently delivers high-quality code and innovative solutions. His ability to adapt to new technologies and work collaboratively makes him an asset to any team.'
+        },
+        {
+            id: 3,
+            name: 'Mark Johnson',
+            relationship: 'CTO at Tech Startup',
+            recommendation: 'Nikhil’s technical expertise and problem-solving skills helped our startup build a scalable, user-friendly platform. Highly recommended!'
+        }
+    ],
+
+    languages: [
+        { id: 1, name: 'English', proficiency: 'Fluent' },
+        { id: 2, name: 'Hindi', proficiency: 'Native' },
+        { id: 3, name: 'Spanish', proficiency: 'Intermediate' }
     ],
 
     achievementsAndExtracurricular: [
@@ -134,3 +163,4 @@ export default {
         }
     ]
 };
+
